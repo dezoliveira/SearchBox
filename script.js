@@ -44,8 +44,8 @@ renderNames = (result) => {
 }
 
 getName = () => {
- 	document.querySelectorAll("ul#nomes_mesa li")
-  	.forEach((name, index) => {
+  document.querySelectorAll("ul#nomes_mesa li")
+    .forEach((name, index) => {
       name.addEventListener('click', (name) => {
         cliente.value = name.target.textContent
         nomes_mesa.innerHTML = ''
@@ -58,14 +58,14 @@ getName = () => {
 }
 
 addName = (e) => {
-	let input = cliente.value.trim()
+  let input = cliente.value.trim()
   let isMatch = arrNomes.find(
-  	(name) => name === input
+    (name) => name === input
   )
-  
-	if(input.length) {
-  	if (!isMatch) {
-    	arrNomes.push(input)
+
+  if(input.length) {
+    if (!isMatch) {
+      arrNomes.push(input)
     }
   }
 

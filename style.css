@@ -35,6 +35,7 @@ body {
   background: transparent;
   border: 1px solid aqua;
   padding: 5px 10px;
+  text-transform: capitalize;
 }
 
 .search input:focus {
