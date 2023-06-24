@@ -31,15 +31,15 @@ compareNames = (e) => {
 
 renderNames = (result) => {
 	let html = ''
-  	if (result) {
-      for(let i in result) {
-        html += `
-          <li>${result[i]}</li>
-        `
-      }
-    
+  if (result) {
+    for(let i in result) {
+      html += `
+        <li>${result[i]}</li>
+      `
+    }
+  
     nomes_mesa.innerHTML = html
-		getName()   
+    getName()   
   }
 }
 
